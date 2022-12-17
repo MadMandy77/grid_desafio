@@ -1,70 +1,115 @@
-* {margin: 0;
-padding: 0;
-box-sizing: border-box;}
-header{
-grid-area: header;
-background-color: rgb(210, 73, 192);
-text-align: center;
-    padding-top: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(210, 73, 192);
+    text-align: center;
+    /* padding-top: 20px; */
     font-size: 32px;
+
 }
+
+navbar {
+    height: 50px
 }
-navbar {height: 50px}
-#menu2{
+
+#menu2 {
     grid-area: menu2;
     background-color: rgb(230, 118, 236);
-    display: flex;}
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: flex-start;
+}
 
 #menu2 a {
     text-decoration: none;
-color: white;
-font-size: 19px;
-margin: 10px;
+    color: white;
+    font-size: 19px;
+    margin: 10px;
 }
 
 #menu2 a:hover {
     text-decoration: none;
-color:white);
-padding:4px; 
-background-color: rgb(61, 31, 62);
+    color: white);
+    padding: 4px;
+    background-color: rgb(61, 31, 62);
 
 }
-main{
-grid-area: main;
-background-color: rgb(247, 251, 240);
+
+#menu2 ul li{
+  list-style: none;
 
 }
-footer{
-grid-area: footer;
-background-color: #66f;
+main {
+            grid-area: main;
+        background-color: rgb(247, 251, 240);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        gap: 10px;
+    
+
 }
 
-.grid-container{
+footer {
+    grid-area: footer;
+    background-color: #66f;
+    text-align: center;
+    padding: 19px;
+}
+
+.grid-container {
     display: grid;
     grid-template-areas:
-    "header header "
-    "menu2 main"
-    "footer footer ";
+        "header header "
+        "menu2 main"
+        "footer footer ";
     gap: 10px;
     height: 100vh;
     width: 100vw;
     grid-template-columns: 1fr 3fr;
     font-family: 'Roboto', sans-serif;
 
-color: white;}
+    color: white;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-.card
-{    width: 18rem;
+.card {
+    width: 18rem;
     color: #5139ff;
     border: aqua 1px solid;
     padding: 10px;
-    text-align: center;}
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    align-items: center;
 
-    .card img {width:180px
-    }
+}
 
-    .btn-primary {background-color: #66f;
-    color: beige; margin: 10px auto;}
+.card img {
+    width: 180px
+}
+
+.btn-primary {
+    background-color: #66f;
+    color: beige;
+    margin: 10px auto;
+}
